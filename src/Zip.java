@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Stream;
@@ -14,7 +15,7 @@ public class Zip {
             zippedList.add(iterator1.next());
             zippedList.add(iterator2.next());
         }
-
+        Collections.shuffle(zippedList);
         return zippedList.stream();
     }
 
